@@ -7,10 +7,10 @@ html,
 body {
   height: 100vh;
   background: #000000;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -22,16 +22,48 @@ body{
   mix-blend-mode: exclusion;
 }
 
-.container{
+.container {
   height: 100vh;
   display: grid;
   place-items: center;
 }
-h1{
+h1 {
   font-size: 8rem;
   text-transform: uppercase;
   color: white;
 }
-section{
+section {
   height: 100vh;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1430px) {
+  h1 {
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: white;
+  }
+  .container {
+    height: 100vh;
+    display: flex;
+    right: 18%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  h1 {
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: white;
+  }
+  .container {
+    height: 100vh; 
+    display: flex;
+    right: 15%;
+    position: fixed;
+    justify-content: center; 
+    align-items: center; 
+  }
 }
